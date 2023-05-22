@@ -86,6 +86,15 @@ static struct device_config {
         .ram_offset = 0x28000000UL,
     },
     {
+        /* PD2186B_A_12.0.19.3.W10 */
+        .name = "PD2186",
+        .model = "V2186A",
+        .android_version = 12,
+        .android_security_patch.year = 2022,
+        .android_security_patch.month = 8,
+        .kernel_version = KERNEL_VERSION(5, 10, 66),
+    },
+    {
         /* G998BXXU4CVC4 */
         .name = "Samsung Galaxy S21 Ultra",
         .model = "SM-G998B",
