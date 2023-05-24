@@ -1,5 +1,8 @@
 LIBNAME=badspin
 
+/* POINT YOUR NDK FOLDER BELOW! Example: ANDROID_NDK_HOME = /home/kohi/ANDROID_NDK*/
+ANDROID_NDK_HOME =
+
 ifndef ANDROID_NDK_HOME
 $(error ANDROID_NDK_HOME is not set)
 endif
