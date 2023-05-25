@@ -33,6 +33,31 @@ $ make list
 2: Google Pixel 6, Android 12 (5/2022), kernel 5.10.66
 3: Google Pixel 6, Android 13 (9/2022), kernel 5.10.107
 ```
+## Add device for test (without any modifications) if it fails changes will be needed.
+
+Modify dev_config.h
+
+device_configs[] = {
+
+    {
+
+    /* SP1A.210812.016.S901EXXU2AVF1 */
+
+        .name = "Samsung Galaxy S22",
+
+        .model = "SM-S901E",
+
+        .android_version = 12,
+
+        .android_security_patch.year = 2022,
+
+        .android_security_patch.month = 6,
+
+        .kernel_version = KERNEL_VERSION(5, 10, 81),
+
+        .ram_offset = 0x28000000UL,
+        
+        
 
 Full root and SELinux bypass for Pixel 6. For Samsung devices, the exploit achieves kernel R/W only.
 
